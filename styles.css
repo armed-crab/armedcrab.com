@@ -46,6 +46,8 @@ nav {
   z-index: 100;
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.nav-logo-img { display: block; width: 32px; height: 32px; }
+.hero-img { display: block; width: 100px; height: 100px; margin: 0 auto; }
 .nav-logo-text { font-size: 15px; font-weight: 500; color: var(--text); }
 .nav-logo-text span { color: var(--red); }
 .nav-links { display: flex; gap: 1.75rem; }
