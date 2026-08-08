@@ -39,7 +39,7 @@
 <main class="legal">
   <div class="section-label">Privacy Policy</div>
   <h1>Void Remnant</h1>
-  <div class="updated">Effective date: July 8, 2026</div>
+  <div class="updated">Effective date: August 8, 2026</div>
 
   <p>This policy describes what data Void Remnant collects, how that data is used, and your rights as a player. If anything here is unclear or you'd like to exercise a right described below, email us at <strong>armedcrab@gmail.com</strong>.</p>
 
@@ -53,21 +53,22 @@
     <li>Your unlock state (which ships, weapons, or ship upgrades you've earned).</li>
     <li>Game settings (audio, accessibility, control preferences).</li>
     <li>A small amount of UI state (which tutorial prompts you've dismissed).</li>
+    <li>Which in-app purchases you own (for example, Void Patron), plus a short local record of recent purchase credits so an ore pack is never accidentally granted twice.</li>
   </ul>
   <p>This data is stored by the app using standard device storage (<code>localStorage</code> and IndexedDB inside the game's WebView). <strong>None of it is transmitted to Armed Crab or to any Armed Crab server.</strong> Armed Crab does not operate a backend, an account system, or any player database. We have no way to identify an individual player.</p>
-  <p>Clearing the app's storage (through your device's settings, or by uninstalling the app) removes all of this data. There is no cloud backup — if you uninstall, your progress is gone.</p>
+  <p>Clearing the app's storage (through your device's settings, or by uninstalling the app) removes all of this data. There is no cloud backup — if you uninstall, your progress is gone; purchases of permanent items can be restored by Google Play when you reinstall (see the purchases section below).</p>
   <p>Starting with version 2.1.0, Void Remnant also sends <strong>gameplay analytics</strong> — anonymous-by-design progression events (for example, which boss you defeated or which ending you reached) — to Google Analytics for Firebase. See the Firebase Analytics section below for exactly what that includes.</p>
   <p><strong>Void Remnant does not collect:</strong></p>
   <ul>
     <li>Your name, email address, phone number, or contact list</li>
     <li>Your precise location</li>
     <li>Your photos, camera feed, microphone, or any media</li>
-    <li>Any payment information (the game has no in-app purchases)</li>
+    <li>Your payment card details or billing information (Google Play processes all purchases; we never see them)</li>
     <li>Any account credentials (there are no accounts)</li>
   </ul>
 
   <h2>Third-party services — Google AdMob</h2>
-  <p>Void Remnant uses <strong>Google AdMob</strong> to serve rewarded-video ads at a small number of opt-in moments — for example, you can watch an ad to continue after a loss or to double the ore from a run. Rewarded ads are the only kind of ads the game shows; there are no interstitial ads, no banner ads, no forced ad views.</p>
+  <p>Void Remnant uses <strong>Google AdMob</strong> to serve rewarded-video ads at a small number of opt-in moments — for example, you can watch an ad to continue after a loss or to double the ore from a run. Rewarded ads are the only kind of ads the game shows; there are no interstitial ads, no banner ads, no forced ad views. If you purchase Void Patron, the game stops requesting ads entirely and grants those bonuses automatically.</p>
   <p>When AdMob serves an ad, it collects information on Armed Crab's behalf, including:</p>
   <ul>
     <li>Your device's advertising identifier (Android Advertising ID on Android, IDFA on iOS)</li>
@@ -82,6 +83,10 @@
   <p><strong>Consent for personalized ads (EU / EEA / UK / California).</strong> If you're in a region where consent is legally required, Void Remnant shows a consent prompt (via Google's User Messaging Platform) the first time you launch the app. You can choose to see personalized ads or non-personalized ads. Non-personalized ads still collect limited data (for fraud prevention and delivery), but they don't use your behavior to target ads. You can re-open the consent form at any time — tap <strong>PRIVACY OPTIONS</strong> from the pause menu. (This option is visible only in regions where consent is legally required, i.e. EU / EEA / UK.)</p>
   <p>If you're in a region where consent isn't legally required, ads are shown with Google's default personalization. Your device's system-level ad-tracking controls also apply. On Android, look under your device's Settings for "Ads" or "Google Ads" — the exact path varies by Android version (Settings → Google → Ads, or Settings → Privacy → Ads on newer versions). On iOS: Settings → Privacy &amp; Security → Tracking.</p>
 
+  <h2>Purchases — Google Play Billing</h2>
+  <p>Starting with version 2.2.0, Void Remnant offers optional in-app purchases — the <strong>Void Patron</strong> supporter pack and ore packs. All purchases are processed by <strong>Google Play</strong>. Armed Crab never receives or stores your name, payment card details, billing address, or any other payment information. Google Play handles the entire transaction under Google's privacy policy and terms of service.</p>
+  <p>On your device, the game keeps only what it needs to deliver what you bought: which permanent items you own (for example, whether you are a Void Patron) and a short local record of recent purchase credits. At each launch, the game asks Google Play, on the device, which purchases you own, so permanent purchases are restored automatically if the app's local data was lost. None of this leaves your device through us. Your Google Play purchase history and refunds are managed by Google through your Google account.</p>
+
   <h2>Third-party services — Google Analytics for Firebase</h2>
   <p>Starting with version 2.1.0, Void Remnant uses <strong>Google Analytics for Firebase</strong>, an analytics service provided by Google, to understand how players actually play — where runs end, which bosses stop people, which endings get reached — and to measure whether our ad campaigns bring in players who stick around.</p>
   <p><strong>What it collects.</strong> Firebase Analytics runs automatically while you play and sends the following to Google:</p>
@@ -89,7 +94,7 @@
     <li>An <strong>app-instance ID</strong> — a random identifier Firebase assigns to your install of the game. It is not your name, email, or account (Void Remnant has none of those).</li>
     <li>Your <strong>Android Advertising ID</strong>, used to attribute installs and gameplay to our Google Ads campaigns.</li>
     <li><strong>Approximate location</strong> (country/city level), derived by Google from your IP address. Google masks IP addresses in this process; the game never asks for location permission and never sees your precise location.</li>
-    <li><strong>App-interaction events</strong> — standard events like sessions and screen views, plus a small set of gameplay events we defined ourselves: defeating your first boss, reaching a boss milestone, reaching an ending, and completing a rewarded ad. These events carry only fixed gameplay values (things like the boss number, the ending, the ship you flew, and the game mode). There is no free-text input anywhere in the game, and no personal information is ever attached to these events.</li>
+    <li><strong>App-interaction events</strong> — standard events like sessions and screen views, plus a small set of gameplay events we defined ourselves: defeating your first boss, reaching a boss milestone, reaching an ending, completing a rewarded ad, using your once-per-run free continue, and receiving a courtesy reward when an ad fails to load. These events carry only fixed gameplay values (things like the boss number, the ending, the ship you flew, and the game mode). There is no free-text input anywhere in the game, and no personal information is ever attached to these events.</li>
   </ul>
   <p><strong>Why.</strong> Two reasons, and only these two: to understand gameplay progression (so we can tune difficulty and content where players actually are), and to measure ad-campaign performance. We do not use analytics data to build profiles of you, and we do not sell it.</p>
   <p><strong>Where it goes.</strong> This data is transmitted to Google, encrypted in transit, and processed under Google's terms. Google may use it in connection with its own services, including linking measurement data to Google Ads. For Google's side of the story: the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>, and <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>.</p>
@@ -138,7 +143,7 @@
 
   <h2>Changes to this policy</h2>
   <p>If we update this policy, we'll change the effective date at the top and note the change in the game's next release notes on the Play Store. Material changes (for example, adding a new third-party SDK) will be surfaced in-game where practical. Continued use of Void Remnant after changes means you accept the updated policy.</p>
-  <p>Effective date of this version: July 8, 2026.</p>
+  <p>Effective date of this version: August 8, 2026.</p>
 
   <h2>Contact</h2>
   <p><strong>Email:</strong> <code>armedcrab@gmail.com</code><br/>
