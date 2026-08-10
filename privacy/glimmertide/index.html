@@ -39,7 +39,7 @@
 <main class="legal">
   <div class="section-label">Privacy Policy</div>
   <h1>Glimmertide</h1>
-  <div class="updated">Effective date: August 2, 2026</div>
+  <div class="updated">Effective date: August 9, 2026</div>
 
   <p>This policy describes what data Glimmertide collects, how that data is used, and your rights as a player. If anything here is unclear or you'd like to exercise a right described below, email us at <strong>armedcrab@gmail.com</strong>.</p>
 
@@ -64,7 +64,7 @@
     <li>Your payment card details or billing information (Google Play processes all purchases; we never see them)</li>
     <li>Any account credentials (there are no accounts)</li>
   </ul>
-  <p>Glimmertide currently uses no analytics service. If a future update adds one, this policy will be updated first and the change noted below.</p>
+  <p>Starting with the first game update released after the effective date above, Glimmertide also sends a small set of <strong>gameplay milestones</strong> to Google Analytics for Firebase, for example that a creature was hatched or that a Daily Dive was completed. Your save file itself is never uploaded, and purchase events are deliberately not sent at all. See the Firebase Analytics section below for exactly what is included.</p>
 
   <h2>Third-party services — Google AdMob</h2>
   <p>Glimmertide uses <strong>Google AdMob</strong> to serve rewarded-video ads at a small number of opt-in moments, for example doubling a puzzle reward or earning a free egg. You choose when to watch one; rewarded ads are the only kind of ads the game shows. There are no interstitial ads, no banner ads, no forced ad views. If you purchase Tidekeeper's Blessing, the game stops requesting ads entirely and grants those bonuses automatically.</p>
@@ -85,25 +85,40 @@
   <p>All in-app purchases are processed by <strong>Google Play</strong>. Armed Crab never receives or stores your name, payment card details, billing address, or any other payment information. Google Play handles the entire transaction under Google's privacy policy and terms of service.</p>
   <p>On your device, the game keeps only what it needs to deliver what you bought: which permanent items you own (for example, whether ads are removed) and a short local record of recent purchase credits. At each launch, the game asks Google Play, on the device, which purchases you own, so permanent purchases are restored automatically if the app's local data was lost. None of this leaves your device through us. Your Google Play purchase history and refunds are managed by Google through your Google account.</p>
 
+  <h2>Third-party services — Google Analytics for Firebase</h2>
+  <p>Starting with the first game update released after the effective date above, Glimmertide uses <strong>Google Analytics for Firebase</strong>, an analytics service provided by Google, to understand how the game is actually played (which puzzles people finish, whether the collection loop holds up) and to measure whether our ad campaigns bring in players who stay.</p>
+  <p><strong>What it collects.</strong> Firebase Analytics runs while you play and sends the following to Google:</p>
+  <ul>
+    <li>An <strong>app-instance ID</strong>, a random identifier Firebase assigns to your install of the game. It is not your name, email, or account (Glimmertide has none of those).</li>
+    <li>Your <strong>Android Advertising ID</strong>, used to attribute installs and play to our ad campaigns.</li>
+    <li><strong>Approximate location</strong> (country or city level), derived by Google from your IP address. Google masks IP addresses in this process; the game never asks for location permission and never sees your precise location.</li>
+    <li><strong>App-interaction events</strong>: standard ones like app opens and sessions, plus a small set of game moments we defined ourselves. Those are finishing the opening puzzle, solving your first puzzle on your own, hatching a creature paid for with Pearls you earned, completing a full Daily Dive, opening the game again on a new day, enchanting a creature with Moonlight, and the outcome of a rewarded ad (which reward it was for, whether it played, and whether the reward was granted). These carry only fixed game values such as the pool, the species, the puzzle, and its difficulty. There is no free-text input anywhere in Glimmertide, so no typed content can be attached to an event.</li>
+  </ul>
+  <p><strong>What it does not collect.</strong> Your aquarium and save file are never uploaded. <strong>Purchases are deliberately excluded</strong>: the game does not send purchase, refund, or entitlement events to Analytics, and our Firebase project is not linked to Google Play, so your purchase history is not part of this data. Nothing about payments reaches Analytics through us.</p>
+  <p><strong>Why.</strong> Two reasons and only these two: to see where the game loses people so we can improve it, and to measure ad-campaign performance. We do not build profiles of individual players, and we do not sell this data.</p>
+  <p><strong>Where it goes.</strong> The data is transmitted to Google, encrypted in transit, and processed under Google's terms. Google may use it in connection with its own services, including linking measurement data to Google Ads. Google retains it for a limited period set on our Analytics property, currently 14 months. For Google's side of this: the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>, and <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>.</p>
+  <p><strong>Your choices.</strong> There is no in-game switch to turn analytics off in this version. At the device level you can <strong>delete or reset your advertising ID</strong> and <strong>opt out of ads personalization</strong> (on Android, under Settings for "Ads" or "Google Ads"); deleting the identifier removes what links your device to ad attribution. In regions where consent is legally required, the ad-related parts of this measurement stay switched off until you answer the consent prompt described in the AdMob section above. The <strong>PRIVACY OPTIONS</strong> link in the game governs consent for ad personalization; it does not currently switch analytics off entirely.</p>
+  <p>If you would rather we did not process something described here, email <code>armedcrab@gmail.com</code> and we will do what we reasonably can, including forwarding deletion requests through Google's tools. As everywhere else in this policy: Armed Crab operates no backend, no account system, and no player database. This analytics data lives with Google, not on our servers.</p>
+
   <h2>Notifications</h2>
   <p>Glimmertide can send optional local reminders, for example about your daily streak. These notifications are scheduled entirely on your device. They involve no server, transmit no data, and exist only if you grant the notification permission when asked. You can turn them off at any time in the game or in Android settings, and the game works fully without them.</p>
 
   <h2>Permissions the app requests</h2>
   <ul>
-    <li><strong>Internet and network state:</strong> used by Google's ad and billing services. The game itself makes no network calls.</li>
+    <li><strong>Internet and network state:</strong> used by Google's ad, billing, and analytics services. The game itself contacts no Armed Crab server.</li>
     <li><strong>Notifications:</strong> optional, for the local reminders described above.</li>
     <li><strong>Billing:</strong> allows Google Play to process in-app purchases.</li>
   </ul>
   <p>The app does not request access to your location, camera, microphone, contacts, photos, files, or any other sensitive permission.</p>
 
   <h2>Data retention</h2>
-  <p>Armed Crab does not retain any of the data AdMob collects. We do not operate a backend or database. Retention of AdMob-collected data is governed by Google's own policies; see Google's advertising privacy pages linked above for Google's retention, access, and deletion controls.</p>
+  <p>Armed Crab does not retain any of the data AdMob collects. We do not operate a backend or database. Retention of AdMob-collected data is governed by Google's own policies; see Google's advertising privacy pages linked above for Google's retention, access, and deletion controls. The gameplay events collected by Google Analytics for Firebase are retained by Google for a limited period set on our Analytics property, currently 14 months; we do not archive analytics data ourselves.</p>
 
   <h2>Cookies and local storage</h2>
   <p>Glimmertide is built on web technology (HTML5) and runs inside a native app container. It uses <code>localStorage</code> and IndexedDB inside the app to persist save data on your device. It does not use cookies in the browser sense, and it does not participate in any cross-site tracking.</p>
 
   <h2>Data sharing</h2>
-  <p>Armed Crab does not sell, rent, or share player data. We have no player database to share from. AdMob's own data practices, including whether AdMob shares data with other Google services or advertising partners, are governed by Google's privacy policy linked above.</p>
+  <p>Armed Crab does not sell, rent, or share player data. We have no player database to share from. AdMob's own data practices, including whether AdMob shares data with other Google services or advertising partners, are governed by Google's privacy policy linked above. The gameplay milestones described in the Firebase Analytics section are shared with Google (Google Analytics for Firebase, and Google Ads where campaign measurement is linked).</p>
 
   <h2>Children's privacy</h2>
   <p>Glimmertide is a general-audience game and is <strong>not directed at children under 13</strong>. Ad content in the game is capped at a parental-guidance rating, and the optional rewarded ads only appear when the player chooses to watch one. Armed Crab does not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your under-13 child has been using Glimmertide and that personal information was collected, email us at <code>armedcrab@gmail.com</code> and we will help. (As noted above, we don't operate a player database; in practice there is nothing device-side to delete on our end beyond what clearing app data already does locally. The AdMob SDK has its own deletion mechanism linked from its privacy policy.)</p>
@@ -131,14 +146,15 @@
   </ul>
 
   <h3>How to exercise a right</h3>
-  <p>Because Armed Crab does not retain any user data off-device, there is no server-side deletion endpoint for us to provide. For data held on your device: clear the app's storage or uninstall the game. For data held by Google via AdMob: follow Google's deletion controls linked from its privacy policy. Your Google Play purchase records are managed through your Google account. Email us at <code>armedcrab@gmail.com</code> if you have questions about any of these paths; we'll respond within 30 days.</p>
+  <p>Because Armed Crab does not retain any user data off-device, there is no server-side deletion endpoint for us to provide. For data held on your device: clear the app's storage or uninstall the game. For data held by Google via AdMob or Google Analytics for Firebase: follow Google's deletion controls linked from its privacy policy, and see "Your choices" in the Firebase Analytics section for the device-level identifier controls. Your Google Play purchase records are managed through your Google account. Email us at <code>armedcrab@gmail.com</code> if you have questions about any of these paths; we'll respond within 30 days.</p>
 
   <h2>Security</h2>
   <p>The save data Glimmertide stores lives on your device, protected by your device's operating system. Data collected by Google's SDKs is encrypted in transit using TLS and handled by Google under its own security practices. No system is perfectly secure, but we commit to taking reasonable, practical measures appropriate to a small studio with no player database.</p>
 
   <h2>Changes to this policy</h2>
   <p>If we update this policy, we'll change the effective date at the top and note the change in the game's next release notes on the Play Store. Material changes (for example, adding cloud save or an analytics service) will be surfaced in-game where practical. Continued use of Glimmertide after changes means you accept the updated policy.</p>
-  <p>Effective date of this version: August 2, 2026.</p>
+  <p><strong>Change on August 9, 2026:</strong> added the Google Analytics for Firebase section. The previous version of this policy said Glimmertide used no analytics service and promised to update this page before that changed. This update is published ahead of the game version that begins sending those events, so the policy describes the game before the game behaves that way. Purchase data is explicitly excluded from what is sent.</p>
+  <p>Effective date of this version: August 9, 2026.</p>
 
   <h2>Contact</h2>
   <p><strong>Email:</strong> <code>armedcrab@gmail.com</code><br/>
