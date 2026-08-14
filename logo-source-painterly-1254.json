@@ -1,0 +1,12 @@
+{
+  "image": "20260814-210436_gptimg.png",
+  "created": "2026-08-14T21:04:36",
+  "op": "image_to_image",
+  "source": "/armedcrab/armedcrab.com/logo-source-painterly-1254.png",
+  "prompt": "Keep this painterly crab icon's charm exactly: big white cartoon eyes, tiny smile, round red shell, dark background, and especially the TRIUMPHANT pose \u2014 the right arm thrust up HIGH in glory, elevated well above the shell, katana pointing skyward with its glint, like a victory salute. Only fix the limb anatomy: replace the heart-shaped blobs with proper crab pincers (thick palm, two fingers) \u2014 the right pincer gripping the katana handle high overhead, the left pincer open at its side. Give it eight SHORT, stubby, cute walking legs, four per side, gently bent and tucked close under the body \u2014 not long or spidery. Painterly texture, warm rim light, clean silhouette, readable small, no text.",
+  "requested_size": "auto",
+  "quality": "medium",
+  "model": "gpt-image-2",
+  "size": "1254x1254",
+  "elapsed_s": 44.27
+}

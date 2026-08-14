@@ -1,0 +1,12 @@
+{
+  "image": "20260814-232934_20260814-210436_gptimg_edit.png",
+  "created": "2026-08-14T23:29:34",
+  "op": "edit",
+  "source": "/outputs/20260814-210436_gptimg.png",
+  "ops": [
+    "resize512x512"
+  ],
+  "size": "512x512",
+  "format": "png",
+  "elapsed_s": 0.21
+}
