@@ -1,0 +1,12 @@
+{
+  "image": "20260815-023921_20260815-023846_logo-source-painterly-1254_nobg_comp.png",
+  "created": "2026-08-15T02:39:21",
+  "op": "composite",
+  "foreground": "/outputs/20260815-023846_logo-source-painterly-1254_nobg.png",
+  "background": "/outputs/20260815-023916_20260815-023912_og-image-1200x630_edit_comp.png",
+  "x": 474,
+  "y": 66,
+  "scale": 0.19,
+  "size": "1200x630",
+  "elapsed_s": 0.15
+}

@@ -1,0 +1,8 @@
+{
+  "image": "20260815-023846_logo-source-painterly-1254_nobg.png",
+  "created": "2026-08-15T02:38:46",
+  "op": "remove_background",
+  "source": "/armedcrab/armedcrab.com/logo-source-painterly-1254.png",
+  "model": "rembg:isnet-general-use",
+  "elapsed_s": 20.33
+}
