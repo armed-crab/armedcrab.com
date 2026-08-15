@@ -1,12 +1,12 @@
 {
-  "image": "20260814-232934_20260814-210436_gptimg_edit.png",
-  "created": "2026-08-14T23:29:34",
+  "image": "20260815-043118_logo-crab-transparent-1254_edit.png",
+  "created": "2026-08-15T04:31:18",
   "op": "edit",
-  "source": "/outputs/20260814-210436_gptimg.png",
+  "source": "/armedcrab/armedcrab.com/logo-crab-transparent-1254.png",
   "ops": [
     "resize512x512"
   ],
   "size": "512x512",
   "format": "png",
-  "elapsed_s": 0.21
+  "elapsed_s": 0.66
 }
