@@ -74,12 +74,12 @@ nav {
 
 /* Per-game colour tokens. A catalogue spanning genres carries its own accents;
    the studio red stays on nav, hero and section labels. Apply one of these to a
-   .game-feature or .game-card — the game keeps its colour in either slot.
+   .game-feature or .game-card; the game keeps its colour in either slot.
    Accents must clear 4.5:1 on white, since --accent fills the primary CTA. */
 .accent-void-remnant { --accent: var(--red);  --thumb-bg: #06080f; }
 .accent-glimmertide  { --accent: #15788a;     --thumb-bg: #03121a; }
 
-/* GAMES — featured centerpiece */
+/* GAMES: featured centerpiece */
 .game-feature {
   margin-top: 2rem;
   border: 1.5px solid var(--accent, var(--red));
@@ -102,7 +102,7 @@ nav {
 .store-btn.primary { background: var(--accent, var(--red)); border-color: var(--accent, var(--red)); color: #fff; font-weight: 500; }
 .store-btn.primary:hover { filter: brightness(0.9); color: #fff; }
 
-/* GAMES — compact catalogue card for everything outside the featured slot */
+/* GAMES: compact catalogue card for everything outside the featured slot */
 .game-card {
   display: flex;
   align-items: center;
